@@ -20,7 +20,7 @@
 }
 
 .footer-top {
-    @apply flex flex-col md:flex-col sm:flex-row max-w-5xl p-10 mx-auto drop-shadow-lg bg-green-50 rounded-md z-40 -mb-20 relative;
+    @apply flex flex-col md:flex-col sm:flex-row max-w-5xl p-10 mx-auto drop-shadow-lg bg-green-50 rounded-md z-10 -mb-20 relative;
 }
 
 .footer-inner-container {

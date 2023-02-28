@@ -1,6 +1,7 @@
-<footer class="py-24 px-10 -mb-1 text-white bg-gray-900">
+<footer class="py-20 px-10 -mb-1 text-white bg-gray-900">
     
     <div class="footer-inner-container">
+        
         <!-- Contact us section -->
         <div class="mb-8 lg:mb-0 md:mb-0 sm:mb-0">
             <ul>

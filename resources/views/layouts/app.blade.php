@@ -25,9 +25,7 @@
             <!-- Page Content -->
             <main class="pt-14">
                 {{ $slot }}
-            </main>
-            @include('layouts.footerTop')
-                        
+            </main>                        
             @include('layouts.footer')
         </div>
     </body>

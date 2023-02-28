@@ -2,8 +2,8 @@
     <!-- Style/title for index page -->
     @section('styles')
         <title>{{ 'Blogger | Home' }}</title>
-        <link rel="stylesheet" type="text/css" href="{{ asset('frontend_assets/styles/css/index.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('frontend_assets/styles/css/myBootstrap.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('frontend_assets/styles/css/index.css') }}">
 
     @endsection
     
