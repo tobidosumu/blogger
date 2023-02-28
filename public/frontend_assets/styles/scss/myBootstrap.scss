@@ -1,0 +1,15 @@
+@import './reset.scss';
+
+.textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    &::placeholder {
+        padding-top: 10px;
+    }
+    &:focus {
+        border: none !important;
+        border: 1px solid white;
+        outline: none !important;
+    }
+}
