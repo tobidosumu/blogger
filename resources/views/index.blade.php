@@ -2,7 +2,6 @@
     <!-- Style/title for index page -->
     @section('styles')
         <title>{{ 'Blogger | Home' }}</title>
-        <link rel="stylesheet" type="text/css" href="{{ asset('frontend_assets/styles/css/myBootstrap.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('frontend_assets/styles/css/index.css') }}">
 
     @endsection
@@ -112,4 +111,9 @@
             </div>
         </div>
     </div>
+
+    <x-modal-button>
+        <img src="{{ asset('frontend_assets/assets/svg/feather.svg') }}">
+    </x-modal-button>
+
 </x-app-layout>

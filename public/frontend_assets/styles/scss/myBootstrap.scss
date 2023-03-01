@@ -1,5 +1,36 @@
 @import './reset.scss';
 
+// colors
+$primaryColor: #00e87c;
+$lightGreenColor: rgb(242, 254, 255);
+$veryLightGreenColor: rgb(215, 252, 246);
+$transparentWhite: rgba(255, 255, 255, 0.678);
+$slightTransparentWhite: rgba(255, 255, 255, 0.527);
+$green: #00835c;
+$lightGreen: #4fe3b7c4;
+$accentColor: #6025eb;
+$dimAccentColor: #2a008b;
+$accentHoverColor: #eb253f;
+$accentRedColor: #e21530;
+$lightAccentColorHover: #ffebef;
+$lightRedColor: #eb253f93;
+$veryLightRedColor: #eb253f44;
+$white: #ffffff;
+$grey: #7a7a7a;
+$lightGrey: #f4f4f5;
+$veryLightGrey: #9d9d9d;
+$borderGrey: #ced4da;
+$black: #121d2a;
+$lightBlack: #000000b7;
+
+@mixin accentColorBtn {
+    background-color: $accentHoverColor;
+    &:hover {
+      color: $white;
+      background-color: $accentRedColor;
+    }
+}
+
 .textarea {
     border: none;
     resize: none;
@@ -11,5 +42,23 @@
         border: none !important;
         border: 1px solid white;
         outline: none !important;
+    }
+}
+
+// Create post submit button
+.postBtn {
+    position: fixed;
+    bottom: 70px;
+    right: 45px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: $white;
+    box-shadow: 0px 0px 30px $accentHoverColor;
+    @include accentColorBtn;
+    z-index: 20;
+    img {
+        margin-left: 12px;
     }
 }
