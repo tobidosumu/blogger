@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -10,9 +11,9 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
-        //
+        return view('index');
     }
 
     /**
@@ -28,7 +29,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // return view('index');
     }
 
     /**

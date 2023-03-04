@@ -74,22 +74,7 @@ body {
   border-width: 1px !important;
 }
 
-.textarea {
-  border: none;
-  resize: none;
-  outline: none;
-}
-.textarea::placeholder {
-  padding-top: 10px;
-}
-.textarea:focus {
-  border: none !important;
-  border: 1px solid white;
-  outline: none !important;
-}
-
 .postBtn {
-  position: fixed;
   bottom: 70px;
   right: 45px;
   width: 70px;
@@ -98,12 +83,7 @@ body {
   font-size: 30px;
   color: #ffffff;
   box-shadow: 0px 0px 30px #eb253f;
-  background-color: #eb253f;
   z-index: 20;
-}
-.postBtn:hover {
-  color: #ffffff;
-  background-color: #e21530;
 }
 .postBtn img {
   margin-left: 12px;

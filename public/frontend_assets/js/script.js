@@ -12,14 +12,14 @@
 })();
 
 // Retracts Create Post button tooltip
-(function() {
-  window.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      let tooltip = document.getElementById('createPostTooltip');
-      tooltip.classList.add('hide');
-    }, 3000);
-  });
-})();
+// (function() {
+//   window.addEventListener("DOMContentLoaded", function() {
+//     setTimeout(function() {
+//       let tooltip = document.getElementById('createPostTooltip');
+//       tooltip.classList.add('hide');
+//     }, 3000);
+//   });
+// })();
 
 const autoResizeTextarea = () => {
   const textareas = document.querySelectorAll("#expandable-textarea"); // Post comments

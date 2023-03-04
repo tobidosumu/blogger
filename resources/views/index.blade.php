@@ -3,7 +3,6 @@
     @section('styles')
         <title>{{ 'Blogger | Home' }}</title>
         <link rel="stylesheet" type="text/css" href="{{ asset('frontend_assets/styles/css/index.css') }}">
-
     @endsection
     
     <div class="pt-8 pb-12">
@@ -112,8 +111,25 @@
         </div>
     </div>
 
+    <!-- Create post modal -->
+    <x-custom-modal/>
+
     <x-modal-button>
         <img src="{{ asset('frontend_assets/assets/svg/feather.svg') }}">
     </x-modal-button>
 
+    <!-- Keeps Create Post Modal open when there is error after form submission -->
+    @if ($errors->any())
+        <script defer>
+            $(document).ready(function(){
+                openPostModal();
+            });
+        </script>
+    @endif
+
+    <!-- Black background behind Post Modal -->
+    <div id="blackModalBackground" onclick="closePostModal()" class="blackModalBackground"> 
+    
+    </div>
+    
 </x-app-layout>

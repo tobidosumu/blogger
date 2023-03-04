@@ -1,3 +1,3 @@
-<button {{ $attributes->merge(['type' => 'submit', 'class' => 'postBtn border-0', 'id' => 'postBtnWrapper']) }}>
+<button {{ $attributes->merge(['type' => 'submit', 'class' => 'postBtn', 'onclick' => 'openPostModal()']) }}>
     {{ $slot }}
 </button>

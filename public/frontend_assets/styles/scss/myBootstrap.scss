@@ -23,6 +23,51 @@ $borderGrey: #ced4da;
 $black: #121d2a;
 $lightBlack: #000000b7;
 
+// font sizes
+@mixin veryLittleFont {
+font-size: 0.7rem;
+font-weight: 500;
+}
+  
+@mixin tinyFont {
+font-size: 0.8rem;
+font-weight: 500;
+}
+
+@mixin semiTinyFont {
+font-size: 0.9rem;
+font-weight: 500;
+}
+
+@mixin primaryFont {
+font-size: 0.9rem;
+}
+
+@mixin semiPrimaryFont {
+font-size: 1.05rem;
+font-weight: 400;
+}
+
+@mixin secondaryFont {
+font-size: 0.9rem;
+font-weight: 300;
+}
+
+@mixin semiSecondaryFont {
+font-size: 1.25rem;
+font-weight: 600;
+}
+
+@mixin semiTertiaryFont {
+font-size: 1.3rem;
+font-weight: 600;
+}
+
+@mixin tertiaryFont {
+font-size: 2rem;
+font-weight: 600;
+}
+
 @mixin accentColorBtn {
     background-color: $accentHoverColor;
     &:hover {
@@ -31,23 +76,9 @@ $lightBlack: #000000b7;
     }
 }
 
-.textarea {
-    border: none;
-    resize: none;
-    outline: none;
-    &::placeholder {
-        padding-top: 10px;
-    }
-    &:focus {
-        border: none !important;
-        border: 1px solid white;
-        outline: none !important;
-    }
-}
-
-// Create post submit button
+// Create post button
 .postBtn {
-    position: fixed;
+    // position: fixed;
     bottom: 70px;
     right: 45px;
     width: 70px;
@@ -56,9 +87,21 @@ $lightBlack: #000000b7;
     font-size: 30px;
     color: $white;
     box-shadow: 0px 0px 30px $accentHoverColor;
-    @include accentColorBtn;
+    // @include accentColorBtn;
     z-index: 20;
     img {
         margin-left: 12px;
     }
 }
+
+// @mixin blackModalBackground {
+//     // width: 100%;
+//     // height: 100vh;
+//     // position: fixed;
+//     // display: none;
+//     // margin: auto;
+//     // top: 0px;
+//     // left: 0;
+//     // background-color: $lightBlack;
+//     // z-index: 100;
+//   }
